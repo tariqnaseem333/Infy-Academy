@@ -36,13 +36,6 @@ public class CandidateService {
 
 	// populating String[] by calling calculateGrade(candidateReportTO) and returning the same.
 	public String[] getGradesForAllCandidates() {
-		CandidateDAO candidateDatabase = new CandidateDAO();
-		CandidateReport[] candidatesData = candidateDatabase.getAllCandidates();
-		String[] gradesForAllCandidates = new String[candidatesData.length];
-		for( int i = 0; i < candidatesData.length; i++ ) {
-			gradesForAllCandidates[i] = candidatesData[i].getCandidateId().toString() + ":" + this.calculateGrade(candidatesData[i]);
-		}
-		return gradesForAllCandidates;
+		return null;
 	}
-
 }

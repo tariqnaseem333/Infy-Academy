@@ -17,8 +17,7 @@ public class CandidateTester {
 	
 	
 	public static void main(String[] args) throws Exception {
-		addCandidates();
-		getGradesForAllCandidates();
+		
 	}
 
 	public static void addCandidates() throws Exception  {

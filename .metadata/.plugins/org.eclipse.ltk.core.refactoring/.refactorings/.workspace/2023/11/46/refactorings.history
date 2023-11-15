@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;InfyAcademyDay1_ToTrainee&apos; to &apos;Infy_Academy&apos;" description="Rename resource &apos;InfyAcademyDay1_ToTrainee&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/InfyAcademyDay1_ToTrainee" name="Infy_Academy" stamp="1700073991462" updateReferences="true"/>
+</session>

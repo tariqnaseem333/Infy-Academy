@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Tariq Naseem\Desktop\Java Lex Projects\Project1_Infy Academy\.metadata\.plugins\org.eclipse.jdt.core
+4098879661.index
+1865797976.index
+75931715.index

@@ -2,7 +2,7 @@ package com.infy.userinterface;
 
 import java.time.LocalDate;
 import com.infy.model.Candidate;
-import com.infy.service.CandidateService;
+import com.infy.service.CandidateServiceImpl;
 
 
 
@@ -25,9 +25,9 @@ public class CandidateTester {
 		
 		String message = null;
 		try {
-			CandidateService candidateService = new CandidateService();
-			LocalDate examDate = LocalDate.of(2014, 5, 29);
-			Candidate candidate = new Candidate(12346, "Sam", 51, 56, 78, 'P', "ECE", examDate);
+			CandidateServiceImpl candidateService = new CandidateServiceImpl();
+			LocalDate examDate = LocalDate.of(2014, 5, 23);
+			Candidate candidate = new Candidate(12345, "Sam", 51, 56, 78, 'P', "ECE", examDate);
 			message = candidateService.addCandidate(candidate);
 			System.out.println(message);
 		} catch (Exception  e) {
@@ -37,7 +37,7 @@ public class CandidateTester {
 
 	public static void getGradesForAllCandidates() throws Exception{
 		try {
-		CandidateService candidateService = new CandidateService();
+		CandidateServiceImpl candidateService = new CandidateServiceImpl();
 		String[] allCandidates = candidateService.getGradesForAllCandidates();
 		System.out.println("\tCandidate ID\t\tResult");
 		System.out.println("\t************\t\t******");

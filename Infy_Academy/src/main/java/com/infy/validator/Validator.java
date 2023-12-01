@@ -53,7 +53,8 @@ public class Validator {
 
 	// exam date cannot be today or after todays date
 	public Boolean isValidExamDate(LocalDate examDate) {
-		if( LocalDate.now().compareTo(examDate) >= 0 ) {
+//		Another Way: LocalDate.now().compareTo(examDate) >= 0
+		if( examDate.isBefore(LocalDate.now()) ) {
 			return true;
 		}  
 		return false;

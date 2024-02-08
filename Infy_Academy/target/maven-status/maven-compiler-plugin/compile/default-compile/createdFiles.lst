@@ -1,0 +1,6 @@
+com\infy\model\CandidateReport.class
+com\infy\model\Candidate.class
+com\infy\userinterface\CandidateTester.class
+com\infy\validator\Validator.class
+com\infy\dao\CandidateDAO.class
+com\infy\service\CandidateService.class

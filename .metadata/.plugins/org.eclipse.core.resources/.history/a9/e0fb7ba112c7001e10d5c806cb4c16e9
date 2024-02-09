@@ -26,7 +26,7 @@ public class CandidateTester {
 		String message = null;
 		try {
 			CandidateServiceImpl candidateService = new CandidateServiceImpl();
-			LocalDate examDate = LocalDate.of(2014, 5, 23);
+			LocalDate examDate = LocalDate.of(2024, 5, 23);
 			Candidate candidate = new Candidate(12345, "Sam", 51, 56, 78, 'P', "ECE", examDate);
 			message = candidateService.addCandidate(candidate);
 			System.out.println(message);

@@ -17,7 +17,7 @@ public class CandidateServiceImpl implements CandidateService {
 		Validator validation = new Validator();
 		if( validation.validate(candidate).equals("Successfully Validated") ) {
 			Character tempResult = 'P';
-			if( candidate.getMark1() < 50 || candidate.getMark2() < 50 || candidate.getMark3() < 50  ) {
+			if( candidate.getMark1() >= 50 && candidate.getMark2() >= 50 && candidate.getMark3() >= 50  ) {
 				tempResult = 'F';
 			}
 			if( !candidate.getResult().equals(tempResult) ) {

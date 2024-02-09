@@ -15,8 +15,8 @@ import com.infy.service.CandidateService;
  */
 
 public class CandidateTester {
-
-
+	
+	
 	public static void main(String[] args) throws Exception {
 		addCandidates();
 		getGradesForAllCandidates();
@@ -38,15 +38,14 @@ public class CandidateTester {
 	public static void getGradesForAllCandidates() throws Exception{
 		try {
 			CandidateService candidateService = new CandidateServiceImpl();
-			String[] allCandidates = candidateService.getGradesForAllCandidates();
+			String[] allCandidatesMap = candidateService.getGradesForAllCandidates();
 			System.out.println("\tCandidate ID\t\tResult");
 			System.out.println("\t************\t\t******");
-			for (String candidateReport : allCandidates) {
+			for (String candidateReport : allCandidatesMap) {
 				String candidateId = candidateReport.split(":")[0];
-				String candidateGrade = candidateReport.split(":")[1];	
+				String candidateGrade = candidateReport.split(":")[1];
 				System.out.println("\t" + candidateId + "\t\t\t" + candidateGrade);
 			}
-
 		} catch (Exception e) {
 			System.out.println("\t\t"+e.getMessage());
 		}

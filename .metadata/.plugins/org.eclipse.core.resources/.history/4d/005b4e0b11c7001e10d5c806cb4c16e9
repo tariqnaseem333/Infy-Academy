@@ -1,9 +1,5 @@
 package com.infy.validator;
 
-import java.time.LocalDate;
-
-import com.infy.model.Candidate;
-
 public class Validator {
 	
 //	calls the validation methods for individual inputs

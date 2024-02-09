@@ -14,7 +14,6 @@ public class CandidateReport {
 //	Constructor
 	public CandidateReport(Integer candidateId, String candidateName, Integer mark1, Integer mark2, Integer mark3,
 			Character result, String grade) {
-		super();
 		this.candidateId = candidateId;
 		this.candidateName = candidateName;
 		this.mark1 = mark1;

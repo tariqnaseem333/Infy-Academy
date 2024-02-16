@@ -1,6 +1,10 @@
 package com.infy.userinterface;
 
 import java.time.LocalDate;
+import java.util.Map;
+import java.util.Set;
+
+import com.infy.exception.InfyAcademyException;
 import com.infy.model.Candidate;
 import com.infy.service.CandidateServiceImpl;
 import com.infy.service.CandidateService;
@@ -22,32 +26,30 @@ public class CandidateTester {
 		getGradesForAllCandidates();
 	}
 
-	public static void addCandidates() throws Exception  {
+	public static void addCandidates()  {
 		String message = null;
 		try {
-			CandidateServiceImpl candidateService = new CandidateServiceImpl();
-			LocalDate examDate = LocalDate.of(2014, 5, 23);
+			CandidateService candidateService = new CandidateServiceImpl();
+			LocalDate examDate = LocalDate.of(2014, 5, 29);
 			Candidate candidate = new Candidate(12345, "Sam", 51, 56, 78, 'P', "ECE", examDate);
 			message = candidateService.addCandidate(candidate);
 			System.out.println(message);
-		} catch (Exception  e) {
+		} catch (InfyAcademyException  e) {
 			System.out.println(e.getMessage());
 		}
 	}
 
-	public static void getGradesForAllCandidates() throws Exception{
+	public static void getGradesForAllCandidates() {
 		try {
 			CandidateService candidateService = new CandidateServiceImpl();
-			String[] allCandidates = candidateService.getGradesForAllCandidates();
+			Map<Integer, String> allCandidatesMap = candidateService.getGradesForAllCandidates(); 
 			System.out.println("\tCandidate ID\t\tResult");
 			System.out.println("\t************\t\t******");
-			for (String candidateReport : allCandidates) {
-				String candidateId = candidateReport.split(":")[0];
-				String candidateGrade = candidateReport.split(":")[1];	
-				System.out.println("\t" + candidateId + "\t\t\t" + candidateGrade);
+			Set<Integer> set = allCandidatesMap.keySet();
+			for (Integer candidateId : set) {
+				System.out.println("\t" + candidateId + "\t\t\t" + allCandidatesMap.get(candidateId));
 			}
-
-		} catch (Exception e) {
+		} catch (InfyAcademyException e) {
 			System.out.println("\t\t"+e.getMessage());
 		}
 	}

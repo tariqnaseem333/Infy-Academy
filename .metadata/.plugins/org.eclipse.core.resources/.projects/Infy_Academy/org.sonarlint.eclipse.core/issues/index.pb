@@ -15,7 +15,5 @@ a
 0src/main/java/com/infy/dao/CandidateDAOImpl.java,3\3\33141463115a9032c4f3a6f2a55aec28c4a49587
 h
 8src/main/java/com/infy/service/CandidateServiceImpl.java,4\0\40420430cd09b910cce9dcccd79ee0cc0e5b996f
-j
-:src/main/java/com/infy/exception/InfyAcademyException.java,6\1\6188a733b02c221071408383076de3638f4218e1
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

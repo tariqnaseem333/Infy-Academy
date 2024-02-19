@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.infy.dao.CandidateDAO"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="com.infy.exception.InfyAcademyException"/>
     <fullyQualifiedTypeName name="com.infy.service.CandidateServiceImpl"/>
     <fullyQualifiedTypeName name="com.infy.service.CandidateService"/>
     <fullyQualifiedTypeName name="com.infy.model.CandidateReport"/>
@@ -11,4 +8,8 @@
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="com.infy.dao.CandidateDAOImpl"/>
     <fullyQualifiedTypeName name="com.infy.validator.Validator"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.infy.exception.InfyAcademyException"/>
 </qualifiedTypeNameHistroy>

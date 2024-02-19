@@ -1,13 +1,17 @@
 
 c
-java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b 6c306602717433ae1334cbb5519a76a9h
+java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b 86bb6f6ca786389db50fb65c33226940h
 c
-java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b f4ac71270ec62651215585b475a96dfdh
+java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b 6c306602717433ae1334cbb5519a76a9h
 c
-java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b 86bb6f6ca786389db50fb65c33226940h
+java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b f4ac71270ec62651215585b475a96dfdh
 c
-java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b dc6369ed3ddf5f15682ed03ce23c9470h
+java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b 8f813b11d3ac73ada5438ff5db487788h
 c
-java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b 8f813b11d3ac73ada5438ff5db487788h
+java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b dc6369ed3ddf5f15682ed03ce23c9470h
 c
-java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b e2b840c32adde1055e7aa25b20b59588h
+java:S5411"(Use a primitive boolean expression here.8ÊÕ›„ÿ1b e2b840c32adde1055e7aa25b20b59588h
+k
+java:S6035:"0Replace this alternation with a character class.8˘â¯è€1b 9e7e2788ade2f5927667d81ec1bda011h
+º
+java:S1130"ÄRemove the declaration of thrown exception 'com.infy.exception.InfyAcademyException', as it cannot be thrown from method's body.8¡—˘è€1b 5e8fdc9436922dab5047b65067e02479h

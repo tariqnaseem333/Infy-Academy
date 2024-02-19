@@ -9,21 +9,19 @@ public class Validator {
 	
 //	calls the validation methods for individual inputs
 //	if any method returns false, then the String value correspondingly will be returned
-	public String validate(Candidate candidate) throws InfyAcademyException {
+	public void validate(Candidate candidate) throws InfyAcademyException {
 		if( !this.isValidCandidateId( candidate.getCandidateId() ) )
-			return "The entered candidate ID is invalid.";
+			throw new InfyAcademyException("The entered candidate ID is invalid.");
 		else if( !this.isValidCandidateName( candidate.getCandidateName() ) ) 
-			return "The entered candidate name is invalid.";
+			throw new InfyAcademyException("The entered candidate name is invalid.");
 		else if( !this.isValidExamMarks( candidate ) ) 
-			return "The entered exam marks are invalid.";
+			throw new InfyAcademyException("The entered exam marks are invalid.");
 		else if( !this.isValidResult( candidate.getResult() ) ) 
-			return "The entered result is invalid.";
+			throw new InfyAcademyException("The entered result is invalid.");
 		else if( !this.isValidDepartment( candidate.getDepartment() ) ) 
-			return "The entered Department name is invalid.";
+			throw new InfyAcademyException("The entered Department name is invalid.");
 		else if( !this.isValidExamDate( candidate.getExamDate() ) ) 
-			return "The entered Exam Date is invalid.";
-		else 
-			return "Successfully Validated";
+			throw new InfyAcademyException("The entered Exam Date is invalid.");
 	}
 	
 // 	The entered candidate ID should be of size 5

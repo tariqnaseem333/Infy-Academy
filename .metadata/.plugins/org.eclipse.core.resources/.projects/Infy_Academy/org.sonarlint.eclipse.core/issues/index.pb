@@ -17,3 +17,5 @@ h
 8src/main/java/com/infy/service/CandidateServiceImpl.java,4\0\40420430cd09b910cce9dcccd79ee0cc0e5b996f
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+j
+:src/main/java/com/infy/exception/InfyAcademyException.java,6\1\6188a733b02c221071408383076de3638f4218e1

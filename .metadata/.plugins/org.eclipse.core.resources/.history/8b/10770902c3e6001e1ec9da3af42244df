@@ -55,6 +55,6 @@ public class CandidateServiceImpl implements CandidateService {
 		candidateDAO.getAllCandidates()
 		.stream()
 		.forEach(candidate -> candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate)));
-		return candidateIdGradeMap;
+return candidateIdGradeMap;
 	}
 }

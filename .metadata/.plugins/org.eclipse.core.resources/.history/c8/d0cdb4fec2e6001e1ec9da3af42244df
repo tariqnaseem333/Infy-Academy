@@ -52,9 +52,10 @@ public class CandidateServiceImpl implements CandidateService {
 	@Override
 	public Map<Integer, String> getGradesForAllCandidates() throws InfyAcademyException {
 		Map<Integer, String> candidateIdGradeMap = new TreeMap<>();
-		candidateDAO.getAllCandidates()
-		.stream()
-		.forEach(candidate -> candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate)));
+		List<CandidateReport> allCandidates = candidateDAO.getAllCandidates();
+		for( CandidateReport candidate : allCandidates ) {
+			candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate));
+		}
 		return candidateIdGradeMap;
 	}
 }

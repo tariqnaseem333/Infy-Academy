@@ -10,7 +10,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 
 	@Override
 	public String addCandidate(Candidate candidates) throws InfyAcademyException {
-		return "Candidate details are successfully added.";
+		return "INSERT_SUCCESS";
 	}
 
 	@Override

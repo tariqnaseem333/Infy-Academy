@@ -1,0 +1,62 @@
+package com.infy.service;
+
+import com.infy.model.Candidate;
+import com.infy.model.CandidateReport;
+import com.infy.validator.Validator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+import com.infy.dao.CandidateDAO;
+import com.infy.dao.CandidateDAOImpl;
+import com.infy.exception.InfyAcademyException;
+
+public class CandidateServiceImpl implements CandidateService {
+
+//	Instance Variable
+	private CandidateDAO candidateDAO = new CandidateDAOImpl();
+
+	// can have result as 'P' only if all 3 marks are 50 and above
+	@Override
+	public String addCandidate(Candidate candidate) throws InfyAcademyException {
+		Validator validator = new Validator();
+		
+		validator.validate(candidate);
+		Character tempResult = 'P';
+		if (candidate.getMark1() < 50 || candidate.getMark2() < 50 || candidate.getMark3() < 50) {
+			tempResult = 'F';
+		}
+		if (!candidate.getResult().equals(tempResult)) {
+			throw new InfyAcademyException("Service.INCORRECT_RESULT");
+		}
+		return candidateDAO.addCandidate(candidate);
+	}
+
+	// calculating grade for candidate based on his marks and result
+	@Override
+	public String calculateGrade(CandidateReport candidateReportTO) {
+		String grade = null;
+		if( candidateReportTO.getResult() == 'F' ) {
+			grade = "NA";
+		} else {
+			float average = ( candidateReportTO.getMark1() + candidateReportTO.getMark2() + candidateReportTO.getMark3() ) / 3F;
+			if( average >= 85.0 )
+				grade = "A";
+			else if( average >= 75.0 && average < 85.0 )
+				grade = "B";
+			else
+				grade = "C";
+		}
+		return grade;
+	}
+
+	// populating String[] by calling calculateGrade(candidateReportTO) and returning the same.
+	@Override
+	public Map<Integer, String> getGradesForAllCandidates() throws InfyAcademyException {
+		Map<Integer, String> candidateIdGradeMap = new TreeMap<>();
+		List<CandidateReport> allCandidates = candidateDAO.getAllCandidates();
+		for( CandidateReport candidate : allCandidates ) {
+			candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate));
+		}
+		return candidateIdGradeMap;
+	}
+}

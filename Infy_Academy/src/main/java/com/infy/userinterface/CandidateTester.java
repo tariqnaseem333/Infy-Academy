@@ -4,6 +4,10 @@ import java.time.LocalDate;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.configuration2.PropertiesConfiguration;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.ex.ConfigurationException;
+
 import com.infy.exception.InfyAcademyException;
 import com.infy.model.Candidate;
 import com.infy.service.CandidateServiceImpl;
@@ -25,20 +29,22 @@ public class CandidateTester {
 		getGradesForAllCandidates();
 	}
 
-	public static void addCandidates()  {
+	public static void addCandidates() throws ConfigurationException {
+		PropertiesConfiguration config = new Configurations().properties("configuration.properties");
 		String message = null;
 		try {
 			CandidateService candidateService = new CandidateServiceImpl();
 			LocalDate examDate = LocalDate.of(2014, 5, 29);
 			Candidate candidate = new Candidate(12346, "Sam", 51, 56, 78, 'P', "ECE", examDate);
 			message = candidateService.addCandidate(candidate);
-			System.out.println(message);
+			System.out.println(config.getProperty(message));
 		} catch (InfyAcademyException  e) {
-			System.out.println(e.getMessage());
+			System.out.println(config.getProperty(e.getMessage()));
 		}
 	}
 
-	public static void getGradesForAllCandidates() {
+	public static void getGradesForAllCandidates() throws ConfigurationException{
+		PropertiesConfiguration config = new Configurations().properties("configuration.properties");
 		try {
 			CandidateService candidateService = new CandidateServiceImpl();
 			Map<Integer, String> allCandidatesMap = candidateService.getGradesForAllCandidates(); 
@@ -49,7 +55,7 @@ public class CandidateTester {
 				System.out.println("\t" + candidateId + "\t\t\t" + allCandidatesMap.get(candidateId));
 			}
 		} catch (InfyAcademyException e) {
-			System.out.println("\t\t"+e.getMessage());
+			System.out.println("\t\t"+config.getProperty(e.getMessage()));
 		}
 	}
 

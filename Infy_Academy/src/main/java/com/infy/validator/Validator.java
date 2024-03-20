@@ -10,18 +10,25 @@ public class Validator {
 //	calls the validation methods for individual inputs
 //	if any method returns false, then the String value correspondingly will be returned
 	public void validate(Candidate candidate) throws InfyAcademyException {
-		if( !this.isValidCandidateId( candidate.getCandidateId() ) )
-			throw new InfyAcademyException("The entered candidate ID is invalid.");
-		else if( !this.isValidCandidateName( candidate.getCandidateName() ) ) 
-			throw new InfyAcademyException("The entered candidate name is invalid.");
-		else if( !this.isValidExamMarks( candidate ) ) 
-			throw new InfyAcademyException("The entered exam marks are invalid.");
-		else if( !this.isValidResult( candidate.getResult() ) ) 
-			throw new InfyAcademyException("The entered result is invalid.");
-		else if( !this.isValidDepartment( candidate.getDepartment() ) ) 
-			throw new InfyAcademyException("The entered Department name is invalid.");
-		else if( !this.isValidExamDate( candidate.getExamDate() ) ) 
-			throw new InfyAcademyException("The entered Exam Date is invalid.");
+		String errorStatus;
+		if (!isValidCandidateName(candidate.getCandidateName())) 
+			errorStatus = "Validator.INVALID_CANDIDATE_NAME";
+		else if (!isValidCandidateId(candidate.getCandidateId()))
+			errorStatus = "Validator.INVALID_CANDIDATE_ID";
+		else if (!isValidDepartment(candidate.getDepartment()))
+			errorStatus = "Validator.INVALID_DEPARTMENT";
+		else if (!isValidExamDate(candidate.getExamDate()))
+			errorStatus = "Validator.INVALID_EXAM_DATE";
+		else if (!isValidExamMarks(candidate))
+			errorStatus = "Validator.INVALID_EXAM_MARKS";
+		else if (!isValidResult(candidate.getResult()))
+			errorStatus = "Validator.INVALID_RESULT";
+		else 
+			errorStatus = null;
+		
+		if (errorStatus != null) {
+			throw new InfyAcademyException(errorStatus);
+		}
 	}
 	
 // 	The entered candidate ID should be of size 5

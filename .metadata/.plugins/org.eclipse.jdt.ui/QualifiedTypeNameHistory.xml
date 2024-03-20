@@ -8,8 +8,12 @@
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="com.infy.dao.CandidateDAOImpl"/>
     <fullyQualifiedTypeName name="com.infy.validator.Validator"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="com.infy.exception.InfyAcademyException"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.commons.configuration2.builder.fluent.Configurations"/>
+    <fullyQualifiedTypeName name="org.apache.commons.configuration2.PropertiesConfiguration"/>
+    <fullyQualifiedTypeName name="org.apache.commons.configuration2.ex.ConfigurationException"/>
 </qualifiedTypeNameHistroy>

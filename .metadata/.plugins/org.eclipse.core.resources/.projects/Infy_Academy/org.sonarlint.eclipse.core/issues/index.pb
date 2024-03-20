@@ -19,3 +19,7 @@ h
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 j
 :src/main/java/com/infy/exception/InfyAcademyException.java,6\1\6188a733b02c221071408383076de3638f4218e1
+L
+bin/configuration.properties,5\7\57d1d530c52c18de796058fd39e487d2da5f9428
+[
++src/main/resources/configuration.properties,9\c\9c700428774faaffae54ab5637b2c0ef254891f5

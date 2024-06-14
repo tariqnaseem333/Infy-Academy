@@ -7,7 +7,7 @@ import com.infy.model.CandidateReport;
 
 public interface CandidateDAO {
 	
-	public abstract String addCandidate(Candidate candidates) throws InfyAcademyException;
-	public abstract List<CandidateReport> getAllCandidates() throws InfyAcademyException;
+	String addCandidate(Candidate candidates);
+	List<CandidateReport> getAllCandidates();
 
 }

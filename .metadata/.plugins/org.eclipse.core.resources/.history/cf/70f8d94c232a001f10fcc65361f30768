@@ -1,0 +1,49 @@
+package com.infy.test;
+
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import com.infy.service.CandidateService;
+import com.infy.exception.InfyAcademyException;
+import com.infy.model.Candidate;
+
+public class CandidateServiceTest {
+	
+	@Test
+	public void addCandidateInvalidCandidateID() throws InfyAcademyException {
+		LocalDate examDate = LocalDate.of(2014, 5, 29);
+		Candidate candidate = new Candidate(1234, "Sam", 51, 56, 78, 'P', "ECE", examDate);
+		
+		CandidateService candidateService = new CandidateServiceImpl();
+		InfyAcademyException exception = Assertions.assertThrows(InfyAcademyException.class, 
+											() -> candidateService.addCandidate(candidate));
+		String actualMessage = "The entered candidate ID is invalid.";
+		Assertions.assertEquals(exception.getMessage(), actualMessage);
+	}
+	
+	@Test
+	public void addCandidateInvalidDepartment() throws InfyAcademyException {
+		LocalDate examDate = LocalDate.of(2014, 5, 29);
+		Candidate candidate = new Candidate(12345, "Sam", 51, 56, 78, 'P', "EC", examDate);
+		
+		CandidateService candidateService = new CandidateServiceImpl();
+		InfyAcademyException exception = Assertions.assertThrows(InfyAcademyException.class, 
+											() -> candidateService.addCandidate(candidate));
+		String actualMessage = "The entered Department name is invalid.";
+		Assertions.assertEquals(exception.getMessage(), actualMessage);
+	}
+	
+	@Test
+	public void addCandidateInvalidResult() throws InfyAcademyException {
+		LocalDate examDate = LocalDate.of(2014, 5, 29);
+		Candidate candidate = new Candidate(12346, "Sam", 51, 6, 78, 'P', "ECE", examDate);
+		
+		CandidateService candidateService = new CandidateServiceImpl();
+		InfyAcademyException exception = Assertions.assertThrows(InfyAcademyException.class, 
+											() -> candidateService.addCandidate(candidate));
+		String actualMessage = "Result should be 'F' (Fail) if student scores less than 50 in any one subject";
+		Assertions.assertEquals(exception.getMessage(), actualMessage);
+	}
+	
+}

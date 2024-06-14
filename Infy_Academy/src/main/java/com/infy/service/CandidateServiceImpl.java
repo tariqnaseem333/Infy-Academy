@@ -6,6 +6,12 @@ import com.infy.validator.Validator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+
+import org.apache.commons.configuration2.PropertiesConfiguration;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.apache.commons.logging.LogFactory;
+
 import com.infy.dao.CandidateDAO;
 import com.infy.dao.CandidateDAOImpl;
 import com.infy.exception.InfyAcademyException;
@@ -15,9 +21,11 @@ public class CandidateServiceImpl implements CandidateService {
 //	Instance Variable
 	private CandidateDAO candidateDAO = new CandidateDAOImpl();
 
+//	Methods
 	// can have result as 'P' only if all 3 marks are 50 and above
 	@Override
-	public String addCandidate(Candidate candidate) throws InfyAcademyException {
+	public String addCandidate(Candidate candidate) throws InfyAcademyException, ConfigurationException {
+		PropertiesConfiguration config = new Configurations().properties("configuration.properties");
 		Validator validator = new Validator();
 		validator.validate(candidate);
 		Character tempResult = 'P';
@@ -25,7 +33,9 @@ public class CandidateServiceImpl implements CandidateService {
 			tempResult = 'F';
 		}
 		if (!candidate.getResult().equals(tempResult)) {
-			throw new InfyAcademyException("Service.INCORRECT_RESULT");
+			InfyAcademyException e = new InfyAcademyException((String)config.getProperty("Service.INCORRECT_RESULT"));
+			LogFactory.getLog(Validator.class).error(e.getMessage(), e);
+			throw e;
 		}
 		return candidateDAO.addCandidate(candidate);
 	}
@@ -53,8 +63,8 @@ public class CandidateServiceImpl implements CandidateService {
 	public Map<Integer, String> getGradesForAllCandidates() throws InfyAcademyException {
 		Map<Integer, String> candidateIdGradeMap = new TreeMap<>();
 		candidateDAO.getAllCandidates()
-		.stream()
-		.forEach(candidate -> candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate)));
+					.stream()
+					.forEach(candidate -> candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate)));
 		return candidateIdGradeMap;
 	}
 }

@@ -7,6 +7,8 @@ import java.util.Set;
 import org.apache.commons.configuration2.PropertiesConfiguration;
 import org.apache.commons.configuration2.builder.fluent.Configurations;
 import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import com.infy.exception.InfyAcademyException;
 import com.infy.model.Candidate;
@@ -23,6 +25,8 @@ import com.infy.service.CandidateService;
  */
 
 public class CandidateTester {
+	
+	private static final Log LOGGER = LogFactory.getLog(CandidateTester.class);
 
 	public static void main(String[] args) throws Exception {
 		addCandidates();
@@ -37,9 +41,9 @@ public class CandidateTester {
 			LocalDate examDate = LocalDate.of(2014, 5, 29);
 			Candidate candidate = new Candidate(12346, "Sam", 51, 56, 78, 'P', "ECE", examDate);
 			message = candidateService.addCandidate(candidate);
-			System.out.println(config.getProperty(message));
+			LOGGER.info(config.getProperty(message));
 		} catch (InfyAcademyException  e) {
-			System.out.println(config.getProperty(e.getMessage()));
+			LOGGER.info(config.getProperty(e.getMessage()));
 		}
 	}
 
@@ -52,10 +56,10 @@ public class CandidateTester {
 			System.out.println("\t************\t\t******");
 			Set<Integer> set = allCandidatesMap.keySet();
 			for (Integer candidateId : set) {
-				System.out.println("\t" + candidateId + "\t\t\t" + allCandidatesMap.get(candidateId));
+				LOGGER.info("\t" + candidateId + "\t\t\t" + allCandidatesMap.get(candidateId));
 			}
 		} catch (InfyAcademyException e) {
-			System.out.println("\t\t"+config.getProperty(e.getMessage()));
+			LOGGER.info("\t\t"+config.getProperty(e.getMessage()));
 		}
 	}
 

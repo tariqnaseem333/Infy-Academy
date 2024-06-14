@@ -9,12 +9,12 @@ import com.infy.model.CandidateReport;
 public class CandidateDAOImpl implements CandidateDAO {
 
 	@Override
-	public String addCandidate(Candidate candidates) throws InfyAcademyException {
+	public String addCandidate(Candidate candidates) {
 		return "INSERT_SUCCESS";
 	}
 
 	@Override
-	public List<CandidateReport> getAllCandidates() throws InfyAcademyException {
+	public List<CandidateReport> getAllCandidates() {
 
 		CandidateReport candidate = new CandidateReport(80004, "John", 90, 80, 70, 'P', null);
 		CandidateReport candidate1 = new CandidateReport(80005, "Marshal", 33, 60, 70, 'F', null);

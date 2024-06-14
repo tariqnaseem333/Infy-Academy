@@ -2,6 +2,11 @@ package com.infy.validator;
 
 import java.time.LocalDate;
 
+import org.apache.commons.configuration2.PropertiesConfiguration;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.apache.commons.logging.LogFactory;
+
 import com.infy.exception.InfyAcademyException;
 import com.infy.model.Candidate;
 
@@ -9,8 +14,9 @@ public class Validator {
 	
 //	calls the validation methods for individual inputs
 //	if any method returns false, then the String value correspondingly will be returned
-	public void validate(Candidate candidate) throws InfyAcademyException {
-		String errorStatus;
+	public void validate(Candidate candidate) throws InfyAcademyException, ConfigurationException {
+		PropertiesConfiguration config = new Configurations().properties("configuration.properties");
+		String errorStatus =  null;
 		if (!isValidCandidateName(candidate.getCandidateName())) 
 			errorStatus = "Validator.INVALID_CANDIDATE_NAME";
 		else if (!isValidCandidateId(candidate.getCandidateId()))
@@ -23,11 +29,11 @@ public class Validator {
 			errorStatus = "Validator.INVALID_EXAM_MARKS";
 		else if (!isValidResult(candidate.getResult()))
 			errorStatus = "Validator.INVALID_RESULT";
-		else 
-			errorStatus = null;
 		
 		if (errorStatus != null) {
-			throw new InfyAcademyException(errorStatus);
+			InfyAcademyException e = new InfyAcademyException((String)config.getProperty(errorStatus));
+			LogFactory.getLog(Validator.class).error(e.getMessage(), e);
+			throw e;
 		}
 	}
 	
@@ -53,9 +59,9 @@ public class Validator {
 		return examDate.isBefore(LocalDate.now());
 	}
 	
-//	Checking if marks are not equal to "0"
+//	Checking if marks are not equal to "0" and negative
 	public Boolean isValidExamMarks(Candidate candidateTO) {
-		return (candidateTO.getMark1() >= 0 && candidateTO.getMark2() >= 0 && candidateTO.getMark3() >= 0);
+		return (candidateTO.getMark1() > 0 && candidateTO.getMark2() > 0 && candidateTO.getMark3() > 0);
 	}
 	
 //	Checking if result set is either 'P' or 'F' only

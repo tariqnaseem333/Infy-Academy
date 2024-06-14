@@ -4,16 +4,19 @@
     <fullyQualifiedTypeName name="com.infy.service.CandidateServiceImpl"/>
     <fullyQualifiedTypeName name="com.infy.service.CandidateService"/>
     <fullyQualifiedTypeName name="com.infy.model.CandidateReport"/>
-    <fullyQualifiedTypeName name="com.infy.model.Candidate"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="com.infy.dao.CandidateDAOImpl"/>
     <fullyQualifiedTypeName name="com.infy.validator.Validator"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="com.infy.exception.InfyAcademyException"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
+    <fullyQualifiedTypeName name="org.apache.commons.configuration2.ex.ConfigurationException"/>
     <fullyQualifiedTypeName name="org.apache.commons.configuration2.builder.fluent.Configurations"/>
     <fullyQualifiedTypeName name="org.apache.commons.configuration2.PropertiesConfiguration"/>
-    <fullyQualifiedTypeName name="org.apache.commons.configuration2.ex.ConfigurationException"/>
+    <fullyQualifiedTypeName name="org.apache.commons.logging.LogFactory"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.infy.model.Candidate"/>
+    <fullyQualifiedTypeName name="com.infy.exception.InfyAcademyException"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
 </qualifiedTypeNameHistroy>

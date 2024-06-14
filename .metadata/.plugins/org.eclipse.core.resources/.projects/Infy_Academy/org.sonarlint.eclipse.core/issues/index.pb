@@ -23,3 +23,9 @@ L
 bin/configuration.properties,5\7\57d1d530c52c18de796058fd39e487d2da5f9428
 [
 +src/main/resources/configuration.properties,9\c\9c700428774faaffae54ab5637b2c0ef254891f5
+@
+log/ErrorLog.log,8\7\87a1ac8c8042ce7cfd40822ae333b1cb63d4b117
+e
+5src/test/java/com/infy/test/CandidateServiceTest.java,3\7\372371592bcce55df4c9ac1493b12deee7bb0ae2
+T
+$src/main/resources/log4j2.properties,0\5\051489c99c8e54c2d1b772850c431abcc78f2b0d

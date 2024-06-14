@@ -1,0 +1,383 @@
+14-Jun-2024 13:27:41 ERROR - Result should be 'F' (Fail) if student scores less than 50 in any one subject
+com.infy.exception.InfyAcademyException: Result should be 'F' (Fail) if student scores less than 50 in any one subject
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:36) ~[classes/:?]
+	at com.infy.test.CandidateServiceTest.lambda$2(CandidateServiceTest.java:45) ~[test-classes/:?]
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at com.infy.test.CandidateServiceTest.addCandidateInvalidResult(CandidateServiceTest.java:44) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons_1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+14-Jun-2024 13:27:41 ERROR - The entered Department name is invalid.
+com.infy.exception.InfyAcademyException: The entered Department name is invalid.
+	at com.infy.validator.Validator.validate(Validator.java:34) ~[classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) ~[classes/:?]
+	at com.infy.test.CandidateServiceTest.lambda$1(CandidateServiceTest.java:33) ~[test-classes/:?]
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at com.infy.test.CandidateServiceTest.addCandidateInvalidDepartment(CandidateServiceTest.java:32) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons_1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+14-Jun-2024 13:27:41 ERROR - The entered candidate ID is invalid.
+com.infy.exception.InfyAcademyException: The entered candidate ID is invalid.
+	at com.infy.validator.Validator.validate(Validator.java:34) ~[classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) ~[classes/:?]
+	at com.infy.test.CandidateServiceTest.lambda$0(CandidateServiceTest.java:21) ~[test-classes/:?]
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115) ~[junit-jupiter-api_5.10.1.jar:5.10.1]
+	at com.infy.test.CandidateServiceTest.addCandidateInvalidCandidateID(CandidateServiceTest.java:20) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons_1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine_5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) [junit-platform-launcher_1.10.1.jar:1.10.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: false
+14-Jun-2024 13:33:01 DEBUG - Converting 'Boolean' value 'false' to type 'Boolean'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Boolean
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Byte'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Byte value '0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value:  
+14-Jun-2024 13:33:01 DEBUG - Converting 'Character' value ' ' to type 'Character'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Character
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Double'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Double value '0.0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Float'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Float value '0.0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Integer'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Integer
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Long'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Long value '0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Short'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Short value '0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0.0
+14-Jun-2024 13:33:01 DEBUG - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a BigDecimal
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'BigInteger' value '0' to type 'BigInteger'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a BigInteger
+14-Jun-2024 13:33:01 DEBUG - Setting default value: false
+14-Jun-2024 13:33:01 DEBUG - Converting 'Boolean' value 'false' to type 'Boolean'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Boolean
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Byte'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Byte value '0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value:  
+14-Jun-2024 13:33:01 DEBUG - Converting 'Character' value ' ' to type 'Character'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Character
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Double'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Double value '0.0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Float'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Float value '0.0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Integer'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Integer
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Long'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Long value '0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer' value '0' to type 'Short'
+14-Jun-2024 13:33:01 DEBUG -     Converted to Short value '0'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: 
+14-Jun-2024 13:33:01 DEBUG - Converting 'String' value '' to type 'String'
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Z@600b90df
+14-Jun-2024 13:33:01 DEBUG - Converting 'boolean[]' value '[Z@600b90df' to type 'boolean[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a boolean[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [B@7c8c9a05
+14-Jun-2024 13:33:01 DEBUG - Converting 'byte[]' value '[B@7c8c9a05' to type 'byte[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a byte[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [C@d41f816
+14-Jun-2024 13:33:01 DEBUG - Converting 'char[]' value '[C@d41f816' to type 'char[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a char[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [D@5c2375a9
+14-Jun-2024 13:33:01 DEBUG - Converting 'double[]' value '[D@5c2375a9' to type 'double[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a double[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [F@60129b9a
+14-Jun-2024 13:33:01 DEBUG - Converting 'float[]' value '[F@60129b9a' to type 'float[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a float[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [I@78d6692f
+14-Jun-2024 13:33:01 DEBUG - Converting 'int[]' value '[I@78d6692f' to type 'int[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a int[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [J@7a55af6b
+14-Jun-2024 13:33:01 DEBUG - Converting 'long[]' value '[J@7a55af6b' to type 'long[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a long[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [S@3d9c13b5
+14-Jun-2024 13:33:01 DEBUG - Converting 'short[]' value '[S@3d9c13b5' to type 'short[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a short[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.math.BigDecimal;@492691d7
+14-Jun-2024 13:33:01 DEBUG - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@492691d7' to type 'BigDecimal[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a BigDecimal[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.math.BigInteger;@558bdf1f
+14-Jun-2024 13:33:01 DEBUG - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@558bdf1f' to type 'BigInteger[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a BigInteger[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Boolean;@7582ff54
+14-Jun-2024 13:33:01 DEBUG - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@7582ff54' to type 'Boolean[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Boolean[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Byte;@6c2c1385
+14-Jun-2024 13:33:01 DEBUG - Converting 'Byte[]' value '[Ljava.lang.Byte;@6c2c1385' to type 'Byte[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Byte[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Character;@3daf7722
+14-Jun-2024 13:33:01 DEBUG - Converting 'Character[]' value '[Ljava.lang.Character;@3daf7722' to type 'Character[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Character[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Double;@74589991
+14-Jun-2024 13:33:01 DEBUG - Converting 'Double[]' value '[Ljava.lang.Double;@74589991' to type 'Double[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Double[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Float;@4716be8b
+14-Jun-2024 13:33:01 DEBUG - Converting 'Float[]' value '[Ljava.lang.Float;@4716be8b' to type 'Float[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Float[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Integer;@2f67b837
+14-Jun-2024 13:33:01 DEBUG - Converting 'Integer[]' value '[Ljava.lang.Integer;@2f67b837' to type 'Integer[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Integer[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Long;@6af9fcb2
+14-Jun-2024 13:33:01 DEBUG - Converting 'Long[]' value '[Ljava.lang.Long;@6af9fcb2' to type 'Long[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Long[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Short;@7efaad5a
+14-Jun-2024 13:33:01 DEBUG - Converting 'Short[]' value '[Ljava.lang.Short;@7efaad5a' to type 'Short[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Short[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.String;@ca30bc1
+14-Jun-2024 13:33:01 DEBUG - Converting 'String[]' value '[Ljava.lang.String;@ca30bc1' to type 'String[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a String[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.lang.Class;@1046d517
+14-Jun-2024 13:33:01 DEBUG - Converting 'Class[]' value '[Ljava.lang.Class;@1046d517' to type 'Class[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Class[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.util.Date;@416c58f5
+14-Jun-2024 13:33:01 DEBUG - Converting 'Date[]' value '[Ljava.util.Date;@416c58f5' to type 'Date[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Date[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.util.Calendar;@73cd37c0
+14-Jun-2024 13:33:01 DEBUG - Converting 'Calendar[]' value '[Ljava.util.Calendar;@73cd37c0' to type 'Calendar[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a Calendar[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.io.File;@2bb3058
+14-Jun-2024 13:33:01 DEBUG - Converting 'java.io.File[]' value '[Ljava.io.File;@2bb3058' to type 'java.io.File[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a java.io.File[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.sql.Date;@60df60da
+14-Jun-2024 13:33:01 DEBUG - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@60df60da' to type 'java.sql.Date[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a java.sql.Date[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.sql.Time;@14fc1f0
+14-Jun-2024 13:33:01 DEBUG - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@14fc1f0' to type 'java.sql.Time[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a java.sql.Time[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.sql.Timestamp;@512baff6
+14-Jun-2024 13:33:01 DEBUG - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@512baff6' to type 'java.sql.Timestamp[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a java.sql.Timestamp[]
+14-Jun-2024 13:33:01 DEBUG - Setting default value: [Ljava.net.URL;@1c93f6e1
+14-Jun-2024 13:33:01 DEBUG - Converting 'java.net.URL[]' value '[Ljava.net.URL;@1c93f6e1' to type 'java.net.URL[]'
+14-Jun-2024 13:33:01 DEBUG -     No conversion required, value is already a java.net.URL[]
+14-Jun-2024 13:33:01 DEBUG - Loading configuration from the context classpath (configuration.properties)
+14-Jun-2024 13:33:01 DEBUG - Loading configuration from the context classpath (configuration.properties)
+14-Jun-2024 13:33:01 DEBUG - Loading configuration from the context classpath (configuration.properties)
+14-Jun-2024 13:33:01 ERROR - The entered candidate name is invalid.
+com.infy.exception.InfyAcademyException: The entered candidate name is invalid.
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+14-Jun-2024 13:33:01 DEBUG - Loading configuration from the context classpath (configuration.properties)

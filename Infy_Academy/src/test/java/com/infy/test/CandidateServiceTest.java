@@ -18,7 +18,7 @@ public class CandidateServiceTest {
 		CandidateService candidateService = new CandidateServiceImpl();
 		InfyAcademyException exception = Assertions.assertThrows(InfyAcademyException.class, 
 											() -> candidateService.addCandidate(candidate));
-		String actualMessage = "The entered candidate ID is invalid.";
+		String actualMessage = "Validator.INVALID_CANDIDATE_ID";
 		Assertions.assertEquals(exception.getMessage(), actualMessage);
 	}
 	
@@ -30,7 +30,7 @@ public class CandidateServiceTest {
 		CandidateService candidateService = new CandidateServiceImpl();
 		InfyAcademyException exception = Assertions.assertThrows(InfyAcademyException.class, 
 											() -> candidateService.addCandidate(candidate));
-		String actualMessage = "The entered Department name is invalid.";
+		String actualMessage = "Validator.INVALID_DEPARTMENT";
 		Assertions.assertEquals(exception.getMessage(), actualMessage);
 	}
 	
@@ -42,7 +42,7 @@ public class CandidateServiceTest {
 		CandidateService candidateService = new CandidateServiceImpl();
 		InfyAcademyException exception = Assertions.assertThrows(InfyAcademyException.class, 
 											() -> candidateService.addCandidate(candidate));
-		String actualMessage = "Result should be 'F' (Fail) if student scores less than 50 in any one subject";
+		String actualMessage = "Service.INVALID_RESULT";
 		Assertions.assertEquals(exception.getMessage(), actualMessage);
 	}
 	

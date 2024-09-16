@@ -14,9 +14,9 @@ public class Validator {
 	
 //	calls the validation methods for individual inputs
 //	if any method returns false, then the String value correspondingly will be returned
-	public void validate(Candidate candidate) throws InfyAcademyException, ConfigurationException {
-		PropertiesConfiguration config = new Configurations().properties("configuration.properties");
+	public void validate(Candidate candidate) throws InfyAcademyException {
 		String errorStatus =  null;
+		
 		if (!isValidCandidateName(candidate.getCandidateName())) 
 			errorStatus = "Validator.INVALID_CANDIDATE_NAME";
 		else if (!isValidCandidateId(candidate.getCandidateId()))
@@ -31,9 +31,9 @@ public class Validator {
 			errorStatus = "Validator.INVALID_RESULT";
 		
 		if (errorStatus != null) {
-			InfyAcademyException e = new InfyAcademyException((String)config.getProperty(errorStatus));
-			LogFactory.getLog(Validator.class).error(e.getMessage(), e);
-			throw e;
+			InfyAcademyException exception = new InfyAcademyException(errorStatus);
+			LogFactory.getLog(this.getClass()).error(exception.getMessage(), exception);
+			throw exception;
 		}
 	}
 	
@@ -59,9 +59,10 @@ public class Validator {
 		return examDate.isBefore(LocalDate.now());
 	}
 	
-//	Checking if marks are not equal to "0" and negative
+//	Checking if marks are not negative
 	public Boolean isValidExamMarks(Candidate candidateTO) {
-		return (candidateTO.getMark1() > 0 && candidateTO.getMark2() > 0 && candidateTO.getMark3() > 0);
+		return candidateTO.getMark1() >= 0 && candidateTO.getMark2() >= 0
+				&& candidateTO.getMark3() >= 0;
 	}
 	
 //	Checking if result set is either 'P' or 'F' only

@@ -24,20 +24,24 @@ public class CandidateServiceImpl implements CandidateService {
 //	Methods
 	// can have result as 'P' only if all 3 marks are 50 and above
 	@Override
-	public String addCandidate(Candidate candidate) throws InfyAcademyException, ConfigurationException {
-		PropertiesConfiguration config = new Configurations().properties("configuration.properties");
+	public String addCandidate(Candidate candidate) throws InfyAcademyException {
 		Validator validator = new Validator();
-		validator.validate(candidate);
-		Character tempResult = 'P';
-		if (candidate.getMark1() < 50 || candidate.getMark2() < 50 || candidate.getMark3() < 50) {
-			tempResult = 'F';
+		try {
+			validator.validate(candidate);
+			Character tempResult = 'P';
+			if (candidate.getMark1() < 50 || candidate.getMark2() < 50 || candidate.getMark3() < 50) {
+				tempResult = 'F';
+			}
+			if (!candidate.getResult().equals(tempResult)) {
+				throw new InfyAcademyException("Service.INCORRECT_RESULT");
+			}
+			return candidateDAO.addCandidate(candidate);
+		} catch (InfyAcademyException exception) {
+			if (exception.getMessage().contains("Service")) {
+				LogFactory.getLog(getClass()).error(exception.getMessage(), exception);
+			}
+			throw exception;
 		}
-		if (!candidate.getResult().equals(tempResult)) {
-			InfyAcademyException e = new InfyAcademyException((String)config.getProperty("Service.INCORRECT_RESULT"));
-			LogFactory.getLog(Validator.class).error(e.getMessage(), e);
-			throw e;
-		}
-		return candidateDAO.addCandidate(candidate);
 	}
 
 	// calculating grade for candidate based on his marks and result
@@ -48,9 +52,9 @@ public class CandidateServiceImpl implements CandidateService {
 			grade = "NA";
 		} else {
 			float average = ( candidateReportTO.getMark1() + candidateReportTO.getMark2() + candidateReportTO.getMark3() ) / 3F;
-			if( average >= 85.0 )
+			if( average >= 85.0F )
 				grade = "A";
-			else if( average >= 75.0 && average < 85.0 )
+			else if( average >= 75.0F && average < 85.0F )
 				grade = "B";
 			else
 				grade = "C";
@@ -61,10 +65,11 @@ public class CandidateServiceImpl implements CandidateService {
 	// populating String[] by calling calculateGrade(candidateReportTO) and returning the same.
 	@Override
 	public Map<Integer, String> getGradesForAllCandidates() throws InfyAcademyException {
-		Map<Integer, String> candidateIdGradeMap = new TreeMap<>();
-		candidateDAO.getAllCandidates()
-					.stream()
-					.forEach(candidate -> candidateIdGradeMap.put(candidate.getCandidateId(), this.calculateGrade(candidate)));
-		return candidateIdGradeMap;
+		List<CandidateReport> allCandidates = candidateDAO.getAllCandidates();
+		Map<Integer, String> finalList = new TreeMap<>();
+
+		allCandidates.stream().forEach(candidate -> finalList.put(candidate.getCandidateId(), calculateGrade(candidate)));
+		
+		return finalList;
 	}
 }

@@ -2267,3 +2267,161 @@ java.lang.reflect.InaccessibleObjectException: Unable to make public void sun.ni
 2024-06-14 13:36:56,736 [ForkJoinPool.commonPool-worker-1] INFO  j.exodus.gc.GarbageCollector - Queueing ComputeUtilizationFromScratchJob
 2024-06-14 13:37:06,491 [Exodus shared background cleaner] INFO  j.exodus.gc.GarbageCollector - Started calculation of log utilization from scratch at C:\Users\Tariq Naseem\.sonarlint\xodus-local-only-issue-store4216469864106535310
 2024-06-14 13:37:06,505 [Exodus shared background cleaner] INFO  j.exodus.gc.GarbageCollector - Finished calculation of log utilization from scratch at C:\Users\Tariq Naseem\.sonarlint\xodus-local-only-issue-store4216469864106535310
+2024-06-14 13:38:02,289 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-06-14 13:38:02,302 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-06-14 13:38:02,315 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-06-14 13:38:02,317 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-06-14 13:41:12,870 [ForkJoinPool.commonPool-worker-3] INFO  j.exodus.util.CompressBackupUtil - Backup file "local_only_issue_backup2024-06-14-13-41-12.tar.gz" created.
+2024-09-15 17:48:55,348 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-15 17:49:00,088 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:49:00,095 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:49:00,108 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:49:00,109 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:51:28,471 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:51:28,474 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:51:28,477 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:51:28,478 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:52:41,140 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:52:41,142 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:52:41,146 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:52:41,147 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:53:23,183 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:53:23,185 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:53:23,189 [Worker-18: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:53:23,190 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:54:05,371 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:54:05,373 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:54:05,378 [Worker-21: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:54:05,380 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:55:16,182 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:55:16,184 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:55:16,188 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:55:16,190 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:55:58,137 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:55:58,139 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:55:58,142 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:55:58,144 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:56:03,885 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:56:03,886 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:56:03,889 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:56:03,890 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:57:35,679 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:57:35,681 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:57:35,684 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:57:35,686 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:58:33,298 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:58:33,299 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:58:33,301 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:58:33,303 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 17:58:56,041 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:58:56,043 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 17:58:56,046 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 17:58:56,047 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:00:04,819 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:00:04,820 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:00:04,824 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:00:04,825 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:00:54,009 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:00:54,010 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-15 18:00:54,015 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:00:54,017 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:01:17,651 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:01:17,654 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-15 18:01:17,658 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:01:17,659 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:02:41,007 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:02:41,009 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:02:41,012 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:02:41,013 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:03:00,512 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:03:00,513 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:03:00,515 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:03:00,516 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:03:19,063 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:03:19,065 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:03:19,067 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:03:19,068 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:03:49,763 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:03:49,764 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:03:49,767 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:03:49,768 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:00,434 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:00,436 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:04:00,437 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:00,438 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:09,352 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:09,353 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:04:09,355 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:09,356 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:22,644 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:22,646 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:04:22,649 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:22,650 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:29,270 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:29,272 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:04:29,273 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:29,275 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:36,085 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:36,087 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:04:36,089 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:36,090 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:44,195 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:44,196 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:04:44,199 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:44,201 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:48,050 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:48,052 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:04:48,055 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:48,057 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:04:53,997 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:53,999 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:04:54,001 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:04:54,003 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:05:09,608 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:09,609 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:05:09,612 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:09,613 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:05:14,580 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:14,582 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:05:14,583 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:14,584 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:05:23,376 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:23,378 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:05:23,380 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:23,381 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:05:39,412 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:39,413 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:05:39,415 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:39,416 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:05:43,792 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:43,794 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:05:43,796 [Worker-24: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:43,797 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:05:49,314 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:49,315 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:05:49,318 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:05:49,319 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:06:01,675 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:01,676 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:06:01,678 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:01,680 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:06:05,441 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:05,442 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:06:05,443 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:05,444 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:06:12,819 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:12,821 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:06:12,824 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:12,826 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:06:40,104 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:40,105 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:06:40,107 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:40,108 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:06:44,276 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:44,278 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-15 18:06:44,280 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:44,282 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-09-15 18:06:51,367 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:51,368 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-09-15 18:06:51,371 [Worker-8: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-09-15 18:06:51,372 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes

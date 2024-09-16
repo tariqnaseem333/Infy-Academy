@@ -1,0 +1,41 @@
+15-Sep-2024 18:03:51 ERROR - Validator.INVALID_CANDIDATE_NAME
+com.infy.exception.InfyAcademyException: Validator.INVALID_CANDIDATE_NAME
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+15-Sep-2024 18:04:23 ERROR - Validator.INVALID_CANDIDATE_ID
+com.infy.exception.InfyAcademyException: Validator.INVALID_CANDIDATE_ID
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+15-Sep-2024 18:04:45 ERROR - Validator.INVALID_DEPARTMENT
+com.infy.exception.InfyAcademyException: Validator.INVALID_DEPARTMENT
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+15-Sep-2024 18:05:10 ERROR - Validator.INVALID_EXAM_DATE
+com.infy.exception.InfyAcademyException: Validator.INVALID_EXAM_DATE
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+15-Sep-2024 18:05:40 ERROR - Validator.INVALID_EXAM_MARKS
+com.infy.exception.InfyAcademyException: Validator.INVALID_EXAM_MARKS
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+15-Sep-2024 18:06:02 ERROR - Validator.INVALID_RESULT
+com.infy.exception.InfyAcademyException: Validator.INVALID_RESULT
+	at com.infy.validator.Validator.validate(Validator.java:34) [classes/:?]
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:30) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]
+15-Sep-2024 18:06:41 ERROR - Service.INCORRECT_RESULT
+com.infy.exception.InfyAcademyException: Service.INCORRECT_RESULT
+	at com.infy.service.CandidateServiceImpl.addCandidate(CandidateServiceImpl.java:36) [classes/:?]
+	at com.infy.userinterface.CandidateTester.addCandidates(CandidateTester.java:43) [classes/:?]
+	at com.infy.userinterface.CandidateTester.main(CandidateTester.java:32) [classes/:?]

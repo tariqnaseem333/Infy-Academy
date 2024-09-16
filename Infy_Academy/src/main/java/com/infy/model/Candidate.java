@@ -15,6 +15,8 @@ public class Candidate {
 	private LocalDate examDate;	
 	
 //	Constructor
+	public Candidate() {
+	}
 	public Candidate(Integer candidateId, String candidateName, Integer mark1, Integer mark2, Integer mark3,
 			Character result, String department, LocalDate examDate) {
 		this.candidateId = candidateId;
